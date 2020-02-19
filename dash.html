@@ -9,16 +9,26 @@
 <link rel="stylesheet" href="dash.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+    <!-- <span id="navb" onmouseover="openNav()" ><i class="fas fa-bars fa-2x"></i></span> -->
+    <nav>
+        <span id="navb" onmouseover="openNav()" ><i class="fas fa-bars fa-2x"></i></span> 
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>     
+    </nav>
+    <div id="mySidenav" onmouseover="openNav()" onmouseout="closeNav()" class="sidenav">
+        <!-- <a href="javascript:void(0)" >&times;</a> -->
+        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">About</span></a>
+        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Services</span></a>
+        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Clients</span></a>
+        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Contact</span></a>
       </div>
       
       <!-- Use any element to open the sidenav -->
-      <span id="navb" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+      
     
     
       <div class="main">
