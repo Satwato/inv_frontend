@@ -8,31 +8,36 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="dash.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 <body>
     <!-- <span id="navb" onmouseover="openNav()" ><i class="fas fa-bars fa-2x"></i></span> -->
-    <nav>
-        <span id="navb" onmouseover="openNav()" ><i class="fas fa-bars fa-2x"></i></span> 
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-          </ul>     
-    </nav>
-    <div id="mySidenav" onmouseover="openNav()" onmouseout="closeNav()" class="sidenav">
-        <!-- <a href="javascript:void(0)" >&times;</a> -->
-        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">About</span></a>
-        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Services</span></a>
-        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Clients</span></a>
-        <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Contact</span></a>
-      </div>
+    <div style="display: inline;">
+        <nav>
+            <span  id='menul' onclick="togNav()" >
+                <i class="fas fa-align-left"></i> 
+            </span>
+            <!-- <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+              </ul>      -->
+        </nav>
+        <div id="mySidenav" onmouseover="openNav()" onmouseout="closeNav()" class="sidenav">
+            <!-- <a href="javascript:void(0)" onclick="closeNav2()">&times;</a> -->
+            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">About</span></a>
+            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Services</span></a>
+            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Clients</span></a>
+            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Contact</span></a>
+          </div>
+    </div>
       
       <!-- Use any element to open the sidenav -->
       
     
     
-      <div class="main">
-        <div class="container mt-2">
+      <div id="main">
+        <div class="recent container mt-2">
             
             <p><i class="fas fa-images"></i> Recently Uploaded:</p>
             <div class="row text-center">
@@ -92,7 +97,7 @@
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
         </div>
-        <div class="container mt-5">
+        <div class="folder container mt-5">
             <p><i class="fas fa-folder"></i> Folders:</p>
             <div class="row " id="folder">
 
@@ -103,6 +108,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="app.js">
 
 </script>
