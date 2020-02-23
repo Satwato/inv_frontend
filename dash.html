@@ -17,18 +17,18 @@
                 <i class="fas fa-align-left"></i> 
             </span>
             <!-- <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="news.asp">News</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
-              </ul>      -->
+                <li><a id="navlinks" href="default.asp">Home</a></li>
+                <li><a id="navlinks" href="news.asp">News</a></li>
+                <li><a id="navlinks" href="contact.asp">Contact</a></li>
+                <li><a id="navlinks" href="about.asp">About</a></li>
+            </ul>      -->
         </nav>
         <div id="mySidenav" onmouseover="openNav()" onmouseout="closeNav()" class="sidenav">
             <!-- <a href="javascript:void(0)" onclick="closeNav2()">&times;</a> -->
-            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">About</span></a>
-            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Services</span></a>
-            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Clients</span></a>
-            <a href="#"><i class="menuit fas fa-at"></i><span class="textm">Contact</span></a>
+            <a href="#" ><i class="menuit fas fa-at"></i><span class="textm">About</span></a>
+            <a href="#" ><i class="menuit fas fa-at"></i><span class="textm">Services</span></a>
+            <a href="#" ><i class="menuit fas fa-at"></i><span class="textm">Clients</span></a>
+            <a href="#" ><i class="menuit fas fa-at"></i><span class="textm">Contact</span></a>
           </div>
     </div>
       
@@ -47,49 +47,26 @@
                 </div>
                 <div class="col-sm ">
                     <img src="./img/20180907_103351.jpg" id="myImg" class="imv-im" alt="">
-                    <div id="myModal" class="modal">
-
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                    
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                    
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
+                   
                 </div>
                 <div class="col-sm ">
                     <img src="./img/20180907_103421.jpg" id="myImg" class="imv-im" alt="">
-                    <div id="myModal" class="modal">
-
-                        <!-- The Close Button    <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-        
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-        
+                   
                 </div>
-            </nav>
-        -->
-                        <span class="close">&times;</span>
-                    
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                    
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div> 
+                <div class="col-sm ">
+                    <img src="./img/20180907_103304.jpg" id="myImg" class="imv-im" alt="">
+                   
+                </div>
+                <div class="col-sm ">
+                    <img src="./img/20180907_103718.jpg" id="myImg" class="imv-im" alt="">
+                   
                 </div>
             </div>
         </div>
         <div id="myModal" class="modal">
 
             <!-- The Close Button -->
-            <span class="close">&times;</span>
+            <span id="modalclose" class="close" onclick="closeMod()">&times;</span>
         
             <!-- Modal Content (The Image) -->
             <img class="modal-content" id="img01">

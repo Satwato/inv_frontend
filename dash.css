@@ -6,16 +6,23 @@ li {
 }
 
 nav{
-  background-color: aquamarine;
+  background-color:#0f4c75;
   display: flex;
   position: fixed;
   top:0;
   width: 100%;
   z-index: 2;
+  color: #fff;
 }
+
+#navlinks{
+  color: #fff;
+
+}
+
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 45px; /* 0 width - change this with JavaScript */
+  width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   
@@ -30,7 +37,7 @@ nav{
 
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a{
   padding: 8px 8px 8px 0px;
   text-decoration: none;
   
@@ -48,6 +55,7 @@ nav{
   padding-top: 5px;
   position: absolute;
   font-size: 18px;
+  
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -64,6 +72,7 @@ nav{
 }
 
 #main {
+  margin-left: 250px;
   margin-top: 40px;
   transition: margin-left .5s;
   padding: 20px;
@@ -116,6 +125,7 @@ nav{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
+    margin-top: 30px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */

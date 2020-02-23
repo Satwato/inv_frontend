@@ -1,14 +1,16 @@
-var flag=0;
-    const links=['./dummy1','./dummy2','./dummy3','./dummy4','./dummy5','./dummy6']
-    for (link of links) {
-        
-        //  console.log("AAAA");
-        document.getElementById('folder').innerHTML += `<div class="col-3" id="f_outer">
-        
-        <a href=${link} id="f1">
-            ${link}         
-        </a>
-        </div>`;
+var flag=1;
+var flag2;
+
+const links=['./dummy1','./dummy2','./dummy3','./dummy4','./dummy5','./dummy6']
+for (link of links) {
+    
+    //  console.log("AAAA");
+    document.getElementById('folder').innerHTML += `<div class="col-3" id="f_outer">
+    
+    <a href=${link} id="f1">
+        ${link}         
+    </a>
+    </div>`;
 
 }
 
@@ -28,32 +30,46 @@ $('.imv-im').click(function(){
 // When the user clicks on <span> (x), close the modal
 
 });
-span.onclick = function() {
-  modal.style.display = "none";
+function closeMod() {
+  console.log("Njdn")
+  document.getElementById("myModal").style.display = "none";
 } 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  // document.getElementById("main").style.marginLeft = "250px";
+  if(flag2==1){  
+    document.getElementById("mySidenav").style.width = "250px";
+   
+    document.getElementById("main").style.marginLeft = "45px";
+  }
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "45px";
-  // document.getElementById("main").style.marginLeft = "45px";
+  if (flag2==1)
+  {document.getElementById("mySidenav").style.width = "45px"; 
+  
+  document.getElementById("main").style.marginLeft = "45px";
+
+}
 } 
 
    function togNav() {
+    
     console.log("kk");
     if (flag==0) {
+      
       console.log("kk1");
       document.getElementById("mySidenav").style.width = "250px";
+      
       document.getElementById("main").style.marginLeft = "250px";
+      flag2=0;
       flag=1;
     }
     else {
+      
       console.log("kk2");
       document.getElementById("mySidenav").style.width = "45px";
       document.getElementById("main").style.marginLeft = "45px";
+      flag2=1;
       flag=0;
     }
     // $(this).data('clicked', function (_, data) { return !data; });
